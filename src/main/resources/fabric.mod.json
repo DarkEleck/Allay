@@ -4,16 +4,16 @@
   "version": "${version}",
 
   "name": "Mob Vote Allay",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "description": " I'm making the Allay from the Minecraft Live 2021 mob vote.",
   "authors": [
     "Dark_Eleck"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "",
+    "sources": ""
   },
 
-  "license": "CC0-1.0",
+  "license": "MIT",
   "icon": "assets/allay/icon.png",
 
   "environment": "*",
