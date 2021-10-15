@@ -11,11 +11,15 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class Main implements ModInitializer {
+    /*
+     * The entity is registered under the SpawnGroup#CREATURE category, which is what most animals and passive/neutral mobs use.
+     * It has a hitbox size of .75x.75, or 12 "pixels" wide (3/4ths of a block).
+     */
 
     public static final EntityType<AllayEntity> ALLAY = Registry.register(
             Registry.ENTITY_TYPE,
             new Identifier("allay", "allay"),
-            FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, AllayEntity::new).dimensions(EntityDimensions.fixed(0.75f, 0.75f)).build()
+            FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, AllayEntity::new).dimensions(EntityDimensions.fixed(0.40f, 0.80f)).build()
     );
 
     @Override
