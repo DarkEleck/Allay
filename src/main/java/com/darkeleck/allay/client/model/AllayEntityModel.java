@@ -38,11 +38,11 @@ public class AllayEntityModel extends EntityModel<AllayEntity> {
         ModelPartData modelPartData = modelData.getRoot();
         modelPartData.addChild(EntityModelPartNames.HEAD, ModelPartBuilder.create().uv(0, 0).cuboid(-4.0F, -18.0F, -4.0F, 8.0F, 8.0F, 8.0F), ModelTransform.pivot(0.0F, 24.0F, 0.0F));
         modelPartData.addChild(EntityModelPartNames.BODY, ModelPartBuilder.create().uv(1, 16).cuboid(-2.0F, -10.0F, -2.0F, 4.0F, 7.0F, 3.0F), ModelTransform.pivot(0.0F, 24.0F, 0.0F));
-        modelPartData.addChild(EntityModelPartNames.CUBE, ModelPartBuilder.create().uv(0, 33).cuboid(-2.0F, -3.0F, -2.0F, 4.0F, 3.0F, 3.0F), ModelTransform.pivot(0.0F, 24.0F, 0.0F));
-        modelPartData.addChild(EntityModelPartNames.RIGHT_WING, ModelPartBuilder.create().uv(0, 29).cuboid(-20.5F, -13.25F, 0.0F, 18.0F, 10.0F, 0.0F), ModelTransform.NONE);
-        modelPartData.addChild(EntityModelPartNames.LEFT_WING, ModelPartBuilder.create().uv(0, 31).cuboid(-2.0F, -3.0F, -2.0F, 4.0F, 3.0F, 3.0F), ModelTransform.NONE);
+        modelPartData.addChild(EntityModelPartNames.CUBE, ModelPartBuilder.create().uv(20, 23).cuboid(-2.0F, -3.0F, -2.0F, 4.0F, 3.0F, 3.0F), ModelTransform.pivot(0.0F, 24.0F, 0.0F));
+        modelPartData.addChild(EntityModelPartNames.RIGHT_WING, ModelPartBuilder.create().uv(0, 29).cuboid(-20.5F, -13.25F, 0.0F, 18.0F, 10.0F, 0.0F), ModelTransform.pivot(0.0F, 0.0F, 0.0F));
+        modelPartData.addChild(EntityModelPartNames.LEFT_WING, ModelPartBuilder.create().uv(0, 39).cuboid(2.25F, -13.25F, 0.0F, 18.0F, 10.0F, 0.0F), ModelTransform.pivot(0.0F, 0.0F, 0.0F));
         modelPartData.addChild(EntityModelPartNames.RIGHT_ARM, ModelPartBuilder.create().uv(15, 16).cuboid(-4.0F, -10.0F, -1.5F, 2.0F, 5.0F, 2.0F), ModelTransform.pivot(0.0F, 24.0F, 0.0F));
-        modelPartData.addChild(EntityModelPartNames.LEFT_ARM, ModelPartBuilder.create().uv(15, 16).cuboid(2.0F, -10.0F, -1.5F, 2.0F, 5.0F, 2.0F), ModelTransform.NONE);
+        modelPartData.addChild(EntityModelPartNames.LEFT_ARM, ModelPartBuilder.create().uv(15, 16).cuboid(2.0F, -10.0F, -1.5F, 2.0F, 5.0F, 2.0F), ModelTransform.pivot(0.0F, 24.0F, 0.0F));
 
         return TexturedModelData.of(modelData, 64, 64);
     }
@@ -55,6 +55,8 @@ public class AllayEntityModel extends EntityModel<AllayEntity> {
         head.setPivot(0.0F, 24.0F, 0.0F);
         lwing.setPivot(0.0F, 24.0F, 0.0F);
         rwing.setPivot(0.0F, 24.0F, 0.0F);
+        lwing.setAngles(0.0F,-0.4363F, -0.2182F);
+        rwing.setAngles(0.0F, 0.4363F, 0.2182F);
 
     }
 
