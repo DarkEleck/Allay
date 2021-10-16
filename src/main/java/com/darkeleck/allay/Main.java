@@ -19,7 +19,7 @@ public class Main implements ModInitializer {
     public static final EntityType<AllayEntity> ALLAY = Registry.register(
             Registry.ENTITY_TYPE,
             new Identifier("allay", "allay"),
-            FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, AllayEntity::new).dimensions(EntityDimensions.fixed(0.40f, 0.80f)).build()
+            FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, AllayEntity::new).dimensions(EntityDimensions.fixed(0.5f, 1.125f)).build()
     );
 
     @Override
